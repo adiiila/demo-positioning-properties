@@ -80,14 +80,27 @@ ul {
 
 .relative {
     /* add relative properties here */
+    /* this is useful if you have items to overlap */
+    position: relative;
+    top: 40px;
+    left: 20px;
 }
 
 .relative-2 {
     /* add relative-2 properties here */
+    position: relative;
+    /* when you add this is makes the child of realtive to it 
+    so it moves .abosulte2 to the bottom right of this corner */
 }
 
 .absolute {
     /* add absolute properties here */
+    /* removes the space the element took up and moves it according to the browser window */
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* this moved it to the top right corner */
+
 }
 
 .absolute-2 {
@@ -95,6 +108,10 @@ ul {
     height: 75px;
     border: 2px solid #a89070;
     /* add absolute-2 properties here */
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    /* posiyon in bottom right of the viewport */
 }
 
 .absolute-2 .box-paragraph {
@@ -105,4 +122,9 @@ ul {
 
 .fixed {
     /* add fixed properties here */
+    /* like absolute */
+    position: fixed;
+    top: 50%;
+    right:0;
+    /* stays in the same position of the viewport as you scroll */
 }
